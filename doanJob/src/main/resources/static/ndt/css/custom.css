@@ -1,0 +1,42 @@
+.post-tags{
+    display: flex;
+    
+}
+p + p {
+    margin-right: 10px;
+}
+.fa-envelope{
+    margin-right: 5px;
+}
+.clearfix{
+    margin-top: -10px;
+}
+.post-cmt{
+    display: flex;
+}
+.comment-reply + .comment-reply{
+    margin-left: 20px;
+}
+.checked{
+    color: orange;
+}
+.fa-star:hover{
+    color: orange;
+    
+}
+.comments-form{
+    margin-top: 10px;
+}
+.like-box{
+    display: flex;
+}
+.like-box .comment-reply{
+    margin-right: 30px;
+}
+.vote-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-sm{
+    height: 30px;
+}

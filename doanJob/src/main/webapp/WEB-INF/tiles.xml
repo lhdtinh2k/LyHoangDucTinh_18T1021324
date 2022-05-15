@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="login"
+                template="/WEB-INF/jsp/login/login.jsp">
+    </definition>
+    <definition name="logout"
+                template="/WEB-INF/jsp/login/login.jsp">
+    </definition>
+    <definition name="register"
+                template="/WEB-INF/jsp/login/register.jsp">
+    </definition>
+
+    <!-- Start Up Page -->
+    <definition name="homepage-job.definition" template="/WEB-INF/jsp/layout/job-layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/job/header.jsp"/>
+<!--        <put-attribute name="sidebar" value="/WEB-INF/jsp/job/.jsp"/>-->
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/job/footer.jsp"/>
+    </definition>
+
+    <!-- Activity job -->
+    <definition name="job/listProject" extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/list-project.jsp" />
+    </definition>
+    <definition name="job/projectDetail"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/project-detail.jsp" />
+    </definition>
+    <definition name="job/saveProject"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/save-project.jsp" />
+    </definition>
+
+    <definition name="user/userListProject"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/user-list-project.jsp" />
+    </definition>
+
+    <definition name="job/acceptInvestion"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/accept-investion.jsp" />
+    </definition>
+
+    <definition name="user/userListImage"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/user-image-of-project.jsp" />
+    </definition>
+    <definition name="user/userProfile"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/user-profile.jsp" />
+    </definition>
+
+    <definition name="user/updateProfile"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/user-update-profile.jsp" />
+    </definition>
+
+    <definition name="page404"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/job/page-404.jsp" />
+    </definition>
+
+    <!--    INVESTORS-->
+    <definition name="investor"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/candidate/investors-list.jsp" />
+    </definition>
+    <definition name="investorsdetails"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/candidate/investors-details.jsp" />
+    </definition>
+    <definition name="investedProjects"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/candidate/invested-projects.jsp" />
+    </definition>
+
+    <definition name="find-job"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/candidate/find-job.jsp" />
+    </definition>
+    <definition name="savePost"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/candidate/savePost.jsp" />
+    </definition>
+<!--====================================================================-->
+    <definition name="event"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/event/list-event.jsp" />
+    </definition>
+    <definition name="detailsEvent"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/event/event-details.jsp" />
+    </definition>
+    <definition name="blog"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/blog/list-blog.jsp" />
+    </definition>
+    <definition name="detailsBlog"
+                extends="homepage-job.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/blog/details-blog.jsp" />
+    </definition>
+
+    <!--    ======================================="admin"=======================-->
+    <definition name="listAcount"
+                template="/WEB-INF/jsp/admin/user/listUser.jsp">
+    </definition>
+    <definition name="addUser"
+                template="/WEB-INF/jsp/admin/user/addUser.jsp">
+    </definition>
+    <definition name="listProject"
+                template="/WEB-INF/jsp/admin/project/listProject.jsp">
+    </definition>
+    <definition name="detailsProject"
+                template="/WEB-INF/jsp/admin/project/detailsProject.jsp">
+    </definition>
+    <definition name="statistical"
+                template="/WEB-INF/jsp/admin/statistical.jsp">
+    </definition>
+    <definition name="homepage"
+                template="/WEB-INF/jsp/admin/homepage.jsp">
+    </definition>
+    <definition name="listBlog"
+                template="/WEB-INF/jsp/admin/blog/ListBlogs.jsp">
+    </definition>
+    <definition name="saveBlog"
+                template="/WEB-INF/jsp/admin/blog/addBlog.jsp">
+    </definition>
+
+</tiles-definitions>

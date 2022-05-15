@@ -1,0 +1,106 @@
+.post-tags{
+    display: flex;
+}
+p + p {
+    margin-right: 10px;
+}
+.fa-envelope{
+    margin-right: 5px;
+}
+.clearfix{
+    margin-top: -10px;
+}
+.post-cmt{
+    display: flex;
+}
+.comment-reply + .comment-reply{
+    margin-left: 20px;
+}
+.checked{
+    color: orange;
+}
+.fa-star:hover{
+    color: orange;
+    
+}
+.comments-form{
+    margin-top: 10px;
+}
+.like-box{
+    display: flex;
+}
+.like-box .comment-reply{
+    margin-right: 30px;
+}
+.vote-box{
+    display: inline;
+}
+.btn-sm{
+    height: 30px;
+}
+
+
+
+/* Grid view start úp */
+.pagination-lg{
+    justify-content: center;
+}
+
+/* rating star css */
+
+.live-rating {
+    font-size: 43px;
+    margin-left: 10px;
+    color: orange;
+    top: -3px;
+    position: relative;
+}
+
+pre.prettyprint {
+    font-family: "Lucida Console", Monaco, monospace;
+    display: block;
+    margin: 20px 0;
+    font-size: 13px;
+    line-height: 20px;;
+    padding: 20px;
+    background: #EEEEEE;
+    border: 0;
+}
+
+.jq-stars {
+    display: inline-block;
+}
+
+.jq-rating-label {
+    font-size: 22px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-family: helvetica, arial, verdana;
+}
+.ts-name {
+    line-height: 22px;
+    height: 66px;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: center;
+}
+.ts-description{
+    line-height: 18px;
+    overflow: hidden;
+    height: 90px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.jq-star {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.jq-star-svg {
+    padding-left: 3px;
+    width: 100%;
+    height: 100% ;
+}
